@@ -149,4 +149,18 @@ void Decrypt(unsigned char M[MESSAGE_LEN], CipherText *CT,
     for (int j = 0; j < MESSAGE_LEN; ++j) {
         M[j] = CT->cipherText[j] ^K_[j];
     }
+
+    element_t r_;
+    element_init_Zr(r_, pairing);
+    H3(r_, M, K);
+    element_t gr;
+    element_init_G1(gr, pairing);
+    element_pow_zn(gr, param.g, r_);
+    if (element_cmp(CT->hdr.C0, gr))
+    {
+       // printf("Not OK\n");
+        for (size_t i = 0; i < MESSAGE_LEN; i++)
+            M[i] = 0;
+        return;
+    }
 }
