@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/tran/Dropbox/Projects/DBE/DBE2v3/build",
+  "command": "/usr/bin/cc   -g   -std=gnu99 -o CMakeFiles/DBE2.dir/main.c.o   -c /home/tran/Dropbox/Projects/DBE/DBE2v3/main.c",
+  "file": "/home/tran/Dropbox/Projects/DBE/DBE2v3/main.c"
+},
+{
+  "directory": "/home/tran/Dropbox/Projects/DBE/DBE2v3/build",
+  "command": "/usr/bin/cc   -g   -std=gnu99 -o CMakeFiles/DBE2.dir/dbe2.c.o   -c /home/tran/Dropbox/Projects/DBE/DBE2v3/dbe2.c",
+  "file": "/home/tran/Dropbox/Projects/DBE/DBE2v3/dbe2.c"
+}
+]

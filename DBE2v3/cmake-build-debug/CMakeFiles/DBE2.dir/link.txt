@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/DBE2.dir/main.c.o CMakeFiles/DBE2.dir/dbe2.c.o  -o DBE2  -L/usr/local/lib -Wl,-rpath,/usr/local/lib -lpbc -lgmp 
