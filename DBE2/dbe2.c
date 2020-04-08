@@ -214,12 +214,23 @@ void Decrypt(element_t K, PartialSecreteKey d[], int j, Hdr *hdr, Set *revokedUs
         element_mul(dj.d0, dj.d0, d[param.S.s[i]].d0);
         element_mul(dj.d_0, dj.d_0, d[param.S.s[i]].d_0);
     }
-
+/*
     for (int k = 0; k < N; ++k) {
         for (int i = 0; i < param.S.len; ++i) {
             element_mul(dj.d[k],dj.d[k],d[param.S.s[i]].d[k]);
         }
     }
+*/
+
+// Change: Decryption time increases linearly on the number of Revoked Users, 
+//                                        not on the Number of Users
+
+    for (int k = 0; k < revokedUsers->len; ++k) {
+        for (int i = 0; i < param.S.len; ++i) {
+            element_mul(dj.d[revokedUsers->s[k]],dj.d[revokedUsers->s[k]],d[param.S.s[i]].d[revokedUsers->s[k]]);
+        }
+    }
+
 
     element_init_GT(K, bilinearGroup.pairing);
     if (in(j, revokedUsers)) return;
