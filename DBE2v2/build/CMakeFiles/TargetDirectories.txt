@@ -1,3 +1,0 @@
-/home/tran/Dropbox/Projects/DBE/DBE2v2/build/CMakeFiles/rebuild_cache.dir
-/home/tran/Dropbox/Projects/DBE/DBE2v2/build/CMakeFiles/edit_cache.dir
-/home/tran/Dropbox/Projects/DBE/DBE2v2/build/CMakeFiles/DBE2.dir
