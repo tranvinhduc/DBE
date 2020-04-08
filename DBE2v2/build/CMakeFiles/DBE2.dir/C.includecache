@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tran/Dropbox/Projects/DBE/DBE2v2/dbe2.h
+pbc/pbc.h
+-
+fix_params.h
+/home/tran/Dropbox/Projects/DBE/DBE2v2/fix_params.h
+
+/home/tran/Dropbox/Projects/DBE/DBE2v2/fix_params.h
+
+/home/tran/Dropbox/Projects/DBE/DBE2v2/main.c
+dbe2.h
+/home/tran/Dropbox/Projects/DBE/DBE2v2/dbe2.h
+pbc/pbc_test.h
+-
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+
